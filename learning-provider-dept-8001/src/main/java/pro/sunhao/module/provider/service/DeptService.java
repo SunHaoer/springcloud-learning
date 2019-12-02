@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface DeptService {
 
-    boolean add(Dept dept);
+    boolean addDept(Dept dept);
 
-    Dept get(Long id);
+    Dept findById(Long id);
 
-    List<Dept> list();
+    List<Dept> findAll();
 
     Integer getCnt();
 

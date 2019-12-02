@@ -88,6 +88,7 @@
     <modules>
         <module>learning-api</module>
         <module>learning-provider-dept-8001</module>
+        <module>learning-consumer-dept-80</module>
     </modules>
 
 </project>
