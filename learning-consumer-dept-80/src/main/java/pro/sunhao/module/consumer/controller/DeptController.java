@@ -38,4 +38,9 @@ public class DeptController {
         return restTemplate.getForObject( URL_PREFIX + "/test", Integer.class);
     }
 
+    @GetMapping("/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(URL_PREFIX + "/discovery", Object.class);
+    }
+
 }
