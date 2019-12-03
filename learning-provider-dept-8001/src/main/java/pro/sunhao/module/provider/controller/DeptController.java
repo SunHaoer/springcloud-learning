@@ -2,6 +2,7 @@ package pro.sunhao.module.provider.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.testng.annotations.Test;
 import pro.sunhao.module.api.entities.Dept;
 import pro.sunhao.module.provider.service.DeptService;
 

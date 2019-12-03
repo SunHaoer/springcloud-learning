@@ -89,6 +89,7 @@
         <module>learning-api</module>
         <module>learning-provider-dept-8001</module>
         <module>learning-consumer-dept-80</module>
+        <module>learning-eureka-7001</module>
     </modules>
 
 </project>
