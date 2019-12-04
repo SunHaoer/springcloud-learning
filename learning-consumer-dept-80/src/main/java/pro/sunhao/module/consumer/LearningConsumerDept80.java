@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
-import pro.sunhao.module.api.entities.Dept;
 import pro.sunhao.module.rule.SelfRule;
 
 @EnableEurekaClient
@@ -12,7 +11,6 @@ import pro.sunhao.module.rule.SelfRule;
 @SpringBootApplication
 public class LearningConsumerDept80 {
     public static void main(String[] args) {
-        Dept dept = new Dept();
         SpringApplication.run(LearningConsumerDept80.class, args);
     }
 }

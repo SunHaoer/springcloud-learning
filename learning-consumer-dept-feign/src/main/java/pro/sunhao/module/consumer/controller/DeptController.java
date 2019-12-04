@@ -7,41 +7,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import pro.sunhao.module.api.entities.Dept;
+import pro.sunhao.module.api.service.DeptClientService;
 
 import java.util.List;
 
 @RestController
 public class DeptController {
 
-//    final private static String URL_PREFIX = "http://localhost:8001/dept";
-    final private static String URL_PREFIX = "http://learning-dept" + "/dept";
-
     @Autowired
-    private RestTemplate restTemplate;
+    private DeptClientService deptClientService;
 
     @RequestMapping("/add")
     public boolean add(Dept dept) {
-        return restTemplate.postForObject(URL_PREFIX + "/add", dept, Boolean.class);
+        return deptClientService.addDept(dept);
     }
 
     @GetMapping("/get/{id}")
     public Dept findById(@PathVariable Long id) {
-        return restTemplate.getForObject(URL_PREFIX + "/get/" + id, Dept.class);
+        return deptClientService.findById(id);
     }
 
     @GetMapping("/list")
     public List<Dept> list() {
-        return restTemplate.getForObject(URL_PREFIX + "/list", List.class);
+        return deptClientService.findAll();
     }
 
     @GetMapping("/test")
     public Integer getCnt() {
-        return restTemplate.getForObject( URL_PREFIX + "/test", Integer.class);
-    }
-
-    @GetMapping("/discovery")
-    public Object discovery() {
-        return restTemplate.getForObject(URL_PREFIX + "/discovery", Object.class);
+        return deptClientService.getCnt();
     }
 
 }

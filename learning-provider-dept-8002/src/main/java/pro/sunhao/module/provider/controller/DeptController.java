@@ -18,9 +18,6 @@ public class DeptController {
     @Autowired
     private DeptService deptService;
 
-    @Autowired
-    private DiscoveryClient client;
-
     @PostMapping("/add")
     public boolean addDept(@RequestBody Dept dept) {
         return deptService.addDept(dept);
@@ -39,17 +36,6 @@ public class DeptController {
     @GetMapping("/test")
     public Integer getCnt() {
         return deptService.getCnt();
-    }
-
-    @RequestMapping("/discovery")
-    public Object discovery() {
-        List<String> list = client.getServices();
-        System.out.println("discovery:" + list);
-        List<ServiceInstance> instanceList = client.getInstances("learning-dept");
-        for(ServiceInstance instance : instanceList) {
-            System.out.println(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getUri() );
-        }
-        return this.client;
     }
 
 }

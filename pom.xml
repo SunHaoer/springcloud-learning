@@ -94,6 +94,7 @@
         <module>learning-eureka-7003</module>
         <module>learning-provider-dept-8002</module>
         <module>learning-provider-dept-8003</module>
+        <module>learning-consumer-dept-feign</module>
     </modules>
 
 </project>
