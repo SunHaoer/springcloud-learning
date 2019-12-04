@@ -13,7 +13,8 @@ import java.util.List;
 @RestController
 public class DeptController {
 
-    final private static String URL_PREFIX = "http://localhost:8001/dept";
+//    final private static String URL_PREFIX = "http://localhost:8001/dept";
+    final private static String URL_PREFIX = "http://learning-dept" + "/dept";
 
     @Autowired
     private RestTemplate restTemplate;
