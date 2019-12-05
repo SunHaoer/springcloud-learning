@@ -1,0 +1,2 @@
+server:    # 该端口会被 config-server 中的配置覆盖
+  port: 3355

@@ -98,6 +98,8 @@
         <module>learning-provider-dept-hystrix-8001</module>
         <module>learning-consumer-hystrix-dashboard</module>
         <module>learning-zuul-gateway-9527</module>
+        <module>learning-config-3344</module>
+        <module>learning-config-client-3355</module>
     </modules>
 
 </project>
