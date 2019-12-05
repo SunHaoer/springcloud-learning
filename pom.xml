@@ -95,6 +95,7 @@
         <module>learning-provider-dept-8002</module>
         <module>learning-provider-dept-8003</module>
         <module>learning-consumer-dept-feign</module>
+        <module>learning-provider-dept-hystrix-8001</module>
     </modules>
 
 </project>

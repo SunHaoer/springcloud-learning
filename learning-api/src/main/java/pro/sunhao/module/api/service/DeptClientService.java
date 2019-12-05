@@ -9,7 +9,7 @@ import pro.sunhao.module.api.entities.Dept;
 
 import java.util.List;
 
-@FeignClient(value = "learning-dept", path = "/dept")
+@FeignClient(value = "learning-dept", path = "/dept", fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @PostMapping("/add")
