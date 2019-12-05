@@ -97,6 +97,7 @@
         <module>learning-consumer-dept-feign</module>
         <module>learning-provider-dept-hystrix-8001</module>
         <module>learning-consumer-hystrix-dashboard</module>
+        <module>learning-zuul-gateway-9527</module>
     </modules>
 
 </project>
